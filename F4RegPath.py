@@ -92,7 +92,7 @@ def RefreshTree():
     tree.delete(*tree.get_children())
     if len(data) > 0:
         for d in data:
-            tree.insert('', 0, values=d) # Putting the, in reverse, because newest entry should be top if all works out
+            tree.insert('', 0, values=d) # Putting them in reverse, because newest entry should be top if all works out
     else:
         tree.insert('', 0, values=('<Falcon BMS Missing>', "<None>", "False"))
         changeButton["state"] = "disable"
