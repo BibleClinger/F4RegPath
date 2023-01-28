@@ -11,7 +11,7 @@ from tkinter import ttk
 import tkinter.filedialog
 import webbrowser
 
-version = "0.0.0 alpha"
+version = "0.0.1 alpha"
 
 HelpMsg = """Select the version. Press Change to change the installation path in the registry, or DELETE to delete the registry entry.
 
