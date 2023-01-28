@@ -15,7 +15,7 @@ Download the latest exe in the releases. Run it. Read the information the progra
 | ----------- | ----------- |
 | You are trying to install Falcon BMS 4.37, but you're receiving an error that there is an existing registry option for Falcon BMS 4.37. You don't remember installing this version of Falcon BMS before. You have no idea if Falcon BMS is present on your computer. | Run this program, select Falcon BMS 4.37, and click DELETE. Close the program. Install Falcon BMS into an empty directory. |
 | You moved Falcon BMS 4.37, and now it doesn't run. | Run this program, select Falcon BMS 4.37, and click Change. Choose the directory where you moved it to. Close this program. Try running Falcon BMS. |
-| You want to move Falcon BMS 4.37 to another directory without installing. | Move it manually. Run this program, select Falcon BMS 4.37, and click Change. Choose the directory where you moved it to. Close this program. Try running Falcon BMS. |
+| You want to move Falcon BMS 4.37 to another directory without reinstalling. | Move your Falcon BMS installation manually. Run this program, select Falcon BMS 4.37, and click Change. Choose the directory where you moved it to. Close this program. Try running Falcon BMS. |
 
 ## Editing Code (Advanced users only)
 
