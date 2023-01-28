@@ -32,3 +32,5 @@ pyinstaller --windowed --uac-admin --icon=icons8-fighter-jet-100.png --add-data 
 Everything except the icon is released under the MIT license.
 
 [Fighter Jet](https://icons8.com/icon/7T9paWRNQ1CI/fighter-jet) icon by [Icons8](https://icons8.com). As required by the free license, the program must link to the Fighter Jet page. Changes to the program must either use another icon with a different license, or else respect this requirement.
+
+This project is not affilliated with Benchmark Sims. It is a 3rd party program designed to support users of Falcon BMS.
