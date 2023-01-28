@@ -2,7 +2,7 @@
 #
 # This tool enumerates the Benchmark Sims registry for Falcon BMS entries.
 # It allows users to change the location of an existing BMS registry entry.
-# It allows user to delete an existing BMS registry entry.
+# It allows users to delete an existing BMS registry entry.
 import sys
 import os.path
 import winreg
