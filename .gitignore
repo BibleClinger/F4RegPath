@@ -1,0 +1,4 @@
+F4RegPath.spec
+build/
+dist/
+uac-admin.spec
