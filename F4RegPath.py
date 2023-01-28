@@ -144,7 +144,7 @@ def CreateAndExecuteGUI():
         application_path = os.path.dirname(__file__)
     root.iconphoto(False, tk.PhotoImage(file=os.path.join(application_path, iconFile)))
     root.title('F4RegPath: ' + 'v' + version)
-    root.geometry('725x350')
+    root.geometry('725x375')
     menubar = tk.Menu(root)
     root.config(menu=menubar)
     file_menu = tk.Menu(menubar, tearoff=False)
