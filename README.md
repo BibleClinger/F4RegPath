@@ -25,7 +25,7 @@ Clone the rep. Make your changes. Run it with the required permission. If you wa
 pyinstaller --windowed --uac-admin --icon=icons8-fighter-jet-100.png --add-data ".\*png;." --onefile F4RegPath.py
 ```
 
-# License
+## License
 
 Everything except the icon is released under the MIT license.
 
