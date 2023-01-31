@@ -15,7 +15,9 @@ Download the latest exe in the releases. Run it. Read the information the progra
 | ----------- | ----------- |
 | You are trying to install Falcon BMS 4.37, but you're receiving an error that there is an existing registry option for Falcon BMS 4.37. You don't remember installing this version of Falcon BMS before. You have no idea if Falcon BMS is present on your computer. | Run this program, select Falcon BMS 4.37, and click DELETE. Close the program. Install Falcon BMS into an empty directory. |
 | You moved Falcon BMS 4.37, and now it doesn't run. | Run this program, select Falcon BMS 4.37, and click Change. Choose the directory where you moved it to. Close this program. Try running Falcon BMS. |
-| You want to move Falcon BMS 4.37 to another directory without installing. | Move it manually. Run this program, select Falcon BMS 4.37, and click Change. Choose the directory where you moved it to. Close this program. Try running Falcon BMS. |
+| You want to move Falcon BMS 4.37 to another directory without reinstalling. | Move your Falcon BMS installation manually. Run this program, select Falcon BMS 4.37, and click Change. Choose the directory where you moved it to. Close this program. Try running Falcon BMS. |
+| You want to delete an old version of Falcon BMS that exists on your computer, but you don't have the setup program. | You could download the setup program, and use that to uninstall. If you're insisting on using this program for this scenario (not recommended), then run this program. Select the correct Falcon BMS version, and click DELETE. Close the program. Delete the old Falcon BMS installation directory. |
+| You realize there is an older version of Falcon BMS still in the registry, but it does NOT exist on your computer. | Run this program. Select the correct Falcon BMS version. Click DELETE. Close the program. |
 
 ## Editing Code (Advanced users only)
 
@@ -30,3 +32,5 @@ pyinstaller --windowed --uac-admin --icon=icons8-fighter-jet-100.png --add-data 
 Everything except the icon is released under the MIT license.
 
 [Fighter Jet](https://icons8.com/icon/7T9paWRNQ1CI/fighter-jet) icon by [Icons8](https://icons8.com). As required by the free license, the program must link to the Fighter Jet page. Changes to the program must either use another icon with a different license, or else respect this requirement.
+
+This project is not affilliated with Benchmark Sims. It is a 3rd party program designed to support users of Falcon BMS.
