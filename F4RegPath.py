@@ -63,6 +63,8 @@ def deleteVersionFromReg(version):
 
 def GetPathsFromReg():
     arr = []
+    regHandle = None
+    keyHandle = None
     try:
         regHandle = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
         keyHandle = winreg.OpenKey(regHandle, baseSubKey)
@@ -82,8 +84,10 @@ def GetPathsFromReg():
     except OSError:
         tk.messagebox.showerror(title="Registry Error", message="Error while querying registry. Perhaps this is a permission issue. Perhaps BMS was never installed.")
     finally:
-        winreg.CloseKey(keyHandle)
-        winreg.CloseKey(regHandle)
+        if(keyHandle):
+            winreg.CloseKey(keyHandle)
+        if(regHandle):
+            winreg.CloseKey(regHandle)
         return arr
 
 def RefreshTree():
