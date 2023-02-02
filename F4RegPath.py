@@ -82,7 +82,7 @@ def GetPathsFromReg():
                 winreg.CloseKey(subKeyHandle)
             i = i + 1
     except OSError:
-        tk.messagebox.showerror(title="Registry Error", message="No traces of a Falcon BMS installation were found. Perhaps this is a permissions issue. Perhaps BMS has been uninstalled or was never installed.")
+        tk.messagebox.showerror(title="Registry Error", message="No traces of a Falcon BMS installation were found. Perhaps this is a permissions issue. Perhaps BMS has been uninstalled properly or was never installed.")
     finally:
         if(keyHandle):
             winreg.CloseKey(keyHandle)
