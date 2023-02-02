@@ -11,7 +11,7 @@ from tkinter import ttk
 import tkinter.filedialog
 import webbrowser
 
-version = "0.0.2 alpha"
+version = "0.0.4 alpha"
 
 HelpMsg = """Select the version. Press Change to change the installation path in the registry, or DELETE to delete the registry entry.
 
@@ -63,6 +63,8 @@ def deleteVersionFromReg(version):
 
 def GetPathsFromReg():
     arr = []
+    regHandle = None
+    keyHandle = None
     try:
         regHandle = winreg.ConnectRegistry(None, winreg.HKEY_LOCAL_MACHINE)
         keyHandle = winreg.OpenKey(regHandle, baseSubKey)
@@ -80,10 +82,12 @@ def GetPathsFromReg():
                 winreg.CloseKey(subKeyHandle)
             i = i + 1
     except OSError:
-        tk.messagebox.showerror(title="Registry Error", message="Error while querying registry. Perhaps this is a permission issue. Perhaps BMS was never installed.")
+        tk.messagebox.showerror(title="Registry Error", message="No traces of a Falcon BMS installation were found. Perhaps this is a permissions issue. Perhaps BMS has been uninstalled properly or was never installed.")
     finally:
-        winreg.CloseKey(keyHandle)
-        winreg.CloseKey(regHandle)
+        if(keyHandle):
+            winreg.CloseKey(keyHandle)
+        if(regHandle):
+            winreg.CloseKey(regHandle)
         return arr
 
 def RefreshTree():
