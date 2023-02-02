@@ -11,7 +11,7 @@ from tkinter import ttk
 import tkinter.filedialog
 import webbrowser
 
-version = "0.0.2 alpha"
+version = "0.0.4 alpha"
 
 HelpMsg = """Select the version. Press Change to change the installation path in the registry, or DELETE to delete the registry entry.
 
@@ -82,7 +82,7 @@ def GetPathsFromReg():
                 winreg.CloseKey(subKeyHandle)
             i = i + 1
     except OSError:
-        tk.messagebox.showerror(title="Registry Error", message="Error while querying registry. Perhaps this is a permission issue. Perhaps BMS was never installed.")
+        tk.messagebox.showerror(title="Registry Error", message="No traces of a Falcon BMS installation were found. Perhaps this is a permissions issue. Perhaps BMS has been uninstalled or was never installed.")
     finally:
         if(keyHandle):
             winreg.CloseKey(keyHandle)
